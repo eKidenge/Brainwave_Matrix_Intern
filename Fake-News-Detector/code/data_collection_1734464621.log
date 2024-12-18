@@ -11425,3 +11425,569 @@ Traceback (most recent call last):
 newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://celebrityinsider.org/blake-shelton-and-miranda-lambert-at-war-their-feud-is-nastier-than-fans-even-know-144114/ on URL https://celebrityinsider.org/blake-shelton-and-miranda-lambert-at-war-their-feud-is-nastier-than-fans-even-know-144114/
 2024-12-18 13:42:58,622 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
 2024-12-18 13:42:58,622 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:44:05,577 38896 news_content_collection ERROR Exception in getting data from url headlinebooth.com/search/Amber+Heard
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='headlinebooth.com', port=80): Max retries exceeded with url: /search/Amber+Heard (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x79ca1c27b950>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL http://headlinebooth.com/search/Amber+Heard
+2024-12-18 13:44:15,943 38896 news_content_collection ERROR Exception in getting data from url headlinebooth.com/search/Amber+Heard
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='headlinebooth.com', port=443): Max retries exceeded with url: /search/Amber+Heard (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x79ca1c27b950>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://headlinebooth.com/search/Amber+Heard
+2024-12-18 13:44:53,423 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:45:19,536 38896 news_content_collection ERROR Exception in getting data from url www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558 on URL http://www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558
+2024-12-18 13:45:23,964 38896 news_content_collection ERROR Exception in getting data from url www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558 on URL https://www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558
+2024-12-18 13:45:34,156 38896 news_content_collection ERROR Exception in getting data from url https://web.archive.org/web/20170309125049/http://www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 49, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=7) on URL https://web.archive.org/web/20170309125049/http://www.ibtimes.co.uk/brad-pitt-george-clooneys-friendship-wasnt-destroyed-by-angeline-jolie-despite-claims-1610558
+2024-12-18 13:45:56,182 38896 news_content_collection ERROR Exception in getting data from url www.bostonherald.com/inside_track/celebrity_news/2014/07/baby_joy_ryan_gosling_and_eva_mendes_are_thrilled_to_be
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='www.bostonherald.com', port=80): Max retries exceeded with url: /inside_track/celebrity_news/2014/07/baby_joy_ryan_gosling_and_eva_mendes_are_thrilled_to_be (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x79ca1d6f7aa0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')) on URL http://www.bostonherald.com/inside_track/celebrity_news/2014/07/baby_joy_ryan_gosling_and_eva_mendes_are_thrilled_to_be
+2024-12-18 13:46:03,721 38896 news_content_collection ERROR Exception in getting data from url www.bostonherald.com/inside_track/celebrity_news/2014/07/baby_joy_ryan_gosling_and_eva_mendes_are_thrilled_to_be
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://www.bostonherald.com/inside_track/celebrity_news/2014/07/baby_joy_ryan_gosling_and_eva_mendes_are_thrilled_to_be on URL https://www.bostonherald.com/inside_track/celebrity_news/2014/07/baby_joy_ryan_gosling_and_eva_mendes_are_thrilled_to_be
+2024-12-18 13:46:22,244 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:46:30,048 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:47:17,269 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:47:57,634 38896 news_content_collection ERROR Exception in getting data from url celebrityinsider.org/brad-pitt-and-angelina-jolie-still-working-out-divorce-as-shiloh-ignores-him-in-paris-114263/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://celebrityinsider.org/brad-pitt-and-angelina-jolie-still-working-out-divorce-as-shiloh-ignores-him-in-paris-114263/ on URL http://celebrityinsider.org/brad-pitt-and-angelina-jolie-still-working-out-divorce-as-shiloh-ignores-him-in-paris-114263/
+2024-12-18 13:48:01,606 38896 news_content_collection ERROR Exception in getting data from url celebrityinsider.org/brad-pitt-and-angelina-jolie-still-working-out-divorce-as-shiloh-ignores-him-in-paris-114263/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://celebrityinsider.org/brad-pitt-and-angelina-jolie-still-working-out-divorce-as-shiloh-ignores-him-in-paris-114263/ on URL https://celebrityinsider.org/brad-pitt-and-angelina-jolie-still-working-out-divorce-as-shiloh-ignores-him-in-paris-114263/
+2024-12-18 13:48:14,353 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:48:44,766 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/06/23/angelina-jolie-sad-brad-pitt-more-custody-six-kids/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/06/23/angelina-jolie-sad-brad-pitt-more-custody-six-kids/ on URL http://hollywoodlife.com/2017/06/23/angelina-jolie-sad-brad-pitt-more-custody-six-kids/
+2024-12-18 13:48:54,153 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/06/23/angelina-jolie-sad-brad-pitt-more-custody-six-kids/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='hollywoodlife.com', port=443): Max retries exceeded with url: /2017/06/23/angelina-jolie-sad-brad-pitt-more-custody-six-kids/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x79ca1f7c8470>, 'Connection to hollywoodlife.com timed out. (connect timeout=7)')) on URL https://hollywoodlife.com/2017/06/23/angelina-jolie-sad-brad-pitt-more-custody-six-kids/
+2024-12-18 13:49:55,023 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:50:05,976 38896 news_content_collection ERROR Exception in getting data from url www.cheatsheet.com/entertainment/kim-kardashian-and-kanye-west-surprising-secrets-their-body-language-reveals-about-their-relationship.html/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 410 Client Error: Gone for url: https://www.cheatsheet.com/entertainment/kim-kardashian-and-kanye-west-surprising-secrets-their-body-language-reveals-about-their-relationship.html/ on URL http://www.cheatsheet.com/entertainment/kim-kardashian-and-kanye-west-surprising-secrets-their-body-language-reveals-about-their-relationship.html/
+2024-12-18 13:50:11,688 38896 news_content_collection ERROR Exception in getting data from url www.cheatsheet.com/entertainment/kim-kardashian-and-kanye-west-surprising-secrets-their-body-language-reveals-about-their-relationship.html/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 410 Client Error: Gone for url: https://www.cheatsheet.com/entertainment/kim-kardashian-and-kanye-west-surprising-secrets-their-body-language-reveals-about-their-relationship.html/ on URL https://www.cheatsheet.com/entertainment/kim-kardashian-and-kanye-west-surprising-secrets-their-body-language-reveals-about-their-relationship.html/
+2024-12-18 13:50:26,832 38896 news_content_collection ERROR Exception in getting data from url www.elle.com.au/beauty/selena-gomez-hair-17574
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.elle.com.au', port=443): Read timed out. (read timeout=7) on URL http://www.elle.com.au/beauty/selena-gomez-hair-17574
+2024-12-18 13:50:33,031 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:50:38,775 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:51:45,973 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:52:20,200 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:52:27,515 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/04/06/blake-shelton-gwen-stefani-eloping-marriage-skip-engagement/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/04/06/blake-shelton-gwen-stefani-eloping-marriage-skip-engagement/ on URL http://hollywoodlife.com/2018/04/06/blake-shelton-gwen-stefani-eloping-marriage-skip-engagement/
+2024-12-18 13:52:29,896 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/04/06/blake-shelton-gwen-stefani-eloping-marriage-skip-engagement/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/04/06/blake-shelton-gwen-stefani-eloping-marriage-skip-engagement/ on URL https://hollywoodlife.com/2018/04/06/blake-shelton-gwen-stefani-eloping-marriage-skip-engagement/
+2024-12-18 13:52:47,374 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:53:09,646 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/07/06/selena-gomez-not-competing-justin-bieber-dating-rebound-relationship/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/07/06/selena-gomez-not-competing-justin-bieber-dating-rebound-relationship/ on URL http://hollywoodlife.com/2018/07/06/selena-gomez-not-competing-justin-bieber-dating-rebound-relationship/
+2024-12-18 13:53:12,061 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/07/06/selena-gomez-not-competing-justin-bieber-dating-rebound-relationship/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/07/06/selena-gomez-not-competing-justin-bieber-dating-rebound-relationship/ on URL https://hollywoodlife.com/2018/07/06/selena-gomez-not-competing-justin-bieber-dating-rebound-relationship/
+2024-12-18 13:53:38,947 38896 news_content_collection ERROR Exception in getting data from url www.news.com.au/entertainment/celebrity-life/royals/meghan-markle-just-waiting-for-the-next-bombshell/news-story/13f31fbddf0234ef0490c1f5e1739724
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.news.com.au/entertainment/celebrity-life/royals/meghan-markle-just-waiting-for-the-next-bombshell/news-story/13f31fbddf0234ef0490c1f5e1739724 on URL http://www.news.com.au/entertainment/celebrity-life/royals/meghan-markle-just-waiting-for-the-next-bombshell/news-story/13f31fbddf0234ef0490c1f5e1739724
+2024-12-18 13:53:41,057 38896 news_content_collection ERROR Exception in getting data from url www.news.com.au/entertainment/celebrity-life/royals/meghan-markle-just-waiting-for-the-next-bombshell/news-story/13f31fbddf0234ef0490c1f5e1739724
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.news.com.au/entertainment/celebrity-life/royals/meghan-markle-just-waiting-for-the-next-bombshell/news-story/13f31fbddf0234ef0490c1f5e1739724 on URL https://www.news.com.au/entertainment/celebrity-life/royals/meghan-markle-just-waiting-for-the-next-bombshell/news-story/13f31fbddf0234ef0490c1f5e1739724
+2024-12-18 13:54:08,526 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:54:26,455 38896 news_content_collection ERROR Exception in getting data from url abc.go.com/shows/jimmy-kimmel-live/video/vdka4152008
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://abc.com/shows/jimmy-kimmel-live/video/vdka4152008 on URL http://abc.go.com/shows/jimmy-kimmel-live/video/vdka4152008
+2024-12-18 13:54:29,861 38896 news_content_collection ERROR Exception in getting data from url abc.go.com/shows/jimmy-kimmel-live/video/vdka4152008
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://abc.com/shows/jimmy-kimmel-live/video/vdka4152008 on URL https://abc.go.com/shows/jimmy-kimmel-live/video/vdka4152008
+2024-12-18 13:54:36,407 38896 news_content_collection ERROR Exception in getting data from url www.imdb.com/news/ni61972138
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.imdb.com/news/ni61972138 on URL http://www.imdb.com/news/ni61972138
+2024-12-18 13:54:38,763 38896 news_content_collection ERROR Exception in getting data from url www.imdb.com/news/ni61972138
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.imdb.com/news/ni61972138 on URL https://www.imdb.com/news/ni61972138
+2024-12-18 13:54:47,127 38896 news_content_collection ERROR Exception in getting data from url www.celebuzz.com/2017-03-04/is-kanye-west-heading-to-rehab/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: http://www.celebuzz.com/2017-03-04/is-kanye-west-heading-to-rehab/ on URL http://www.celebuzz.com/2017-03-04/is-kanye-west-heading-to-rehab/
+2024-12-18 13:54:50,224 38896 news_content_collection ERROR Exception in getting data from url www.celebuzz.com/2017-03-04/is-kanye-west-heading-to-rehab/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://www.celebuzz.com/2017-03-04/is-kanye-west-heading-to-rehab/ on URL https://www.celebuzz.com/2017-03-04/is-kanye-west-heading-to-rehab/
+2024-12-18 13:55:04,813 38896 news_content_collection ERROR Exception in getting data from url radaronline.com/videos/kim-kardashian-fires-publicist-politics/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='radaronline.com', port=80): Read timed out. (read timeout=7) on URL http://radaronline.com/videos/kim-kardashian-fires-publicist-politics/
+2024-12-18 13:55:22,059 38896 news_content_collection ERROR Exception in getting data from url oceanup.com/2017/07/25/paris-jackson-strips-down-to-play-cards/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://oceanup.co/2017/07/25/paris-jackson-strips-down-to-play-cards/ on URL http://oceanup.com/2017/07/25/paris-jackson-strips-down-to-play-cards/
+2024-12-18 13:55:26,356 38896 news_content_collection ERROR Exception in getting data from url oceanup.com/2017/07/25/paris-jackson-strips-down-to-play-cards/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://oceanup.co/2017/07/25/paris-jackson-strips-down-to-play-cards/ on URL https://oceanup.com/2017/07/25/paris-jackson-strips-down-to-play-cards/
+2024-12-18 13:55:36,083 38896 news_content_collection ERROR Exception in getting data from url www.imdb.com/news/ni61237264
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.imdb.com/news/ni61237264 on URL http://www.imdb.com/news/ni61237264
+2024-12-18 13:55:38,433 38896 news_content_collection ERROR Exception in getting data from url www.imdb.com/news/ni61237264
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.imdb.com/news/ni61237264 on URL https://www.imdb.com/news/ni61237264
+2024-12-18 13:55:50,412 38896 news_content_collection ERROR Exception in getting data from url www.cosmopolitan.com.au/celebrity/selena-gomez-justin-theroux-dating-gossip-26837
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://cosmopolitan.com.au/celebrity/selena-gomez-justin-theroux-dating-gossip-26837 on URL http://www.cosmopolitan.com.au/celebrity/selena-gomez-justin-theroux-dating-gossip-26837
+2024-12-18 13:55:56,789 38896 news_content_collection ERROR Exception in getting data from url www.cosmopolitan.com.au/celebrity/selena-gomez-justin-theroux-dating-gossip-26837
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://cosmopolitan.com.au/celebrity/selena-gomez-justin-theroux-dating-gossip-26837 on URL https://www.cosmopolitan.com.au/celebrity/selena-gomez-justin-theroux-dating-gossip-26837
+2024-12-18 13:56:15,077 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/04/05/jennifer-aniston-sad-brad-pitt-girlfriend-rumors/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/04/05/jennifer-aniston-sad-brad-pitt-girlfriend-rumors/ on URL http://hollywoodlife.com/2018/04/05/jennifer-aniston-sad-brad-pitt-girlfriend-rumors/
+2024-12-18 13:56:17,473 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/04/05/jennifer-aniston-sad-brad-pitt-girlfriend-rumors/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/04/05/jennifer-aniston-sad-brad-pitt-girlfriend-rumors/ on URL https://hollywoodlife.com/2018/04/05/jennifer-aniston-sad-brad-pitt-girlfriend-rumors/
+2024-12-18 13:56:31,690 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:56:35,370 38896 news_content_collection ERROR Exception in getting data from url www.wdjx.com/rumor-justin-timberlake-signed-non-nudity-clause-super-bowl-halftime-show/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.wdjx.com/rumor-justin-timberlake-signed-non-nudity-clause-super-bowl-halftime-show/ on URL http://www.wdjx.com/rumor-justin-timberlake-signed-non-nudity-clause-super-bowl-halftime-show/
+2024-12-18 13:56:37,845 38896 news_content_collection ERROR Exception in getting data from url www.wdjx.com/rumor-justin-timberlake-signed-non-nudity-clause-super-bowl-halftime-show/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.wdjx.com/rumor-justin-timberlake-signed-non-nudity-clause-super-bowl-halftime-show/ on URL https://www.wdjx.com/rumor-justin-timberlake-signed-non-nudity-clause-super-bowl-halftime-show/
+2024-12-18 13:56:53,695 38896 news_content_collection ERROR Exception in getting data from url www.directexpose.com/angelina-jolie-realtionships/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://directexpose.com/angelina-jolie-realtionships/ on URL http://www.directexpose.com/angelina-jolie-realtionships/
+2024-12-18 13:56:57,915 38896 news_content_collection ERROR Exception in getting data from url www.directexpose.com/angelina-jolie-realtionships/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://directexpose.com/angelina-jolie-realtionships/ on URL https://www.directexpose.com/angelina-jolie-realtionships/
+2024-12-18 13:57:22,053 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:57:37,542 38896 news_content_collection ERROR Exception in getting data from url www.imdb.com/news/ni61796409
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.imdb.com/news/ni61796409 on URL http://www.imdb.com/news/ni61796409
+2024-12-18 13:57:39,978 38896 news_content_collection ERROR Exception in getting data from url www.imdb.com/news/ni61796409
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.imdb.com/news/ni61796409 on URL https://www.imdb.com/news/ni61796409
+2024-12-18 13:57:40,058 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:57:52,317 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:57:52,322 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:57:52,339 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:57:55,579 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:58:08,763 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:58:22,604 38896 news_content_collection ERROR Exception in getting data from url www.etonline.com/jennifer-lopez-serenades-alex-rodriguez-with-journeys-dont-stop-believin-107457
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.etonline.com', port=443): Max retries exceeded with url: /jennifer-lopez-serenades-alex-rodriguez-with-journeys-dont-stop-believin-107457 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x79ca1d6f6660>, 'Connection to www.etonline.com timed out. (connect timeout=7)')) on URL http://www.etonline.com/jennifer-lopez-serenades-alex-rodriguez-with-journeys-dont-stop-believin-107457
+2024-12-18 13:58:36,627 38896 news_content_collection ERROR Exception in getting data from url www.etonline.com/jennifer-lopez-serenades-alex-rodriguez-with-journeys-dont-stop-believin-107457
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.etonline.com', port=443): Max retries exceeded with url: /jennifer-lopez-serenades-alex-rodriguez-with-journeys-dont-stop-believin-107457 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x79ca1c27baa0>, 'Connection to www.etonline.com timed out. (connect timeout=7)')) on URL https://www.etonline.com/jennifer-lopez-serenades-alex-rodriguez-with-journeys-dont-stop-believin-107457
+2024-12-18 13:58:55,557 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:59:23,205 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 13:59:28,707 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 13:59:32,013 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/12/07/kanye-west-kim-kardashian-fighting-filming-birth-3rd-baby-tv/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/12/07/kanye-west-kim-kardashian-fighting-filming-birth-3rd-baby-tv/ on URL http://hollywoodlife.com/2017/12/07/kanye-west-kim-kardashian-fighting-filming-birth-3rd-baby-tv/
+2024-12-18 13:59:34,437 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/12/07/kanye-west-kim-kardashian-fighting-filming-birth-3rd-baby-tv/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/12/07/kanye-west-kim-kardashian-fighting-filming-birth-3rd-baby-tv/ on URL https://hollywoodlife.com/2017/12/07/kanye-west-kim-kardashian-fighting-filming-birth-3rd-baby-tv/
+2024-12-18 13:59:46,729 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/02/23/tristan-thompson-annoyed-lamar-odom-still-hung-up-khloe-kardashian/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/02/23/tristan-thompson-annoyed-lamar-odom-still-hung-up-khloe-kardashian/ on URL http://hollywoodlife.com/2018/02/23/tristan-thompson-annoyed-lamar-odom-still-hung-up-khloe-kardashian/
+2024-12-18 13:59:49,129 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/02/23/tristan-thompson-annoyed-lamar-odom-still-hung-up-khloe-kardashian/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/02/23/tristan-thompson-annoyed-lamar-odom-still-hung-up-khloe-kardashian/ on URL https://hollywoodlife.com/2018/02/23/tristan-thompson-annoyed-lamar-odom-still-hung-up-khloe-kardashian/
+2024-12-18 13:59:58,849 38896 news_content_collection ERROR Exception in getting data from url www.capitalfm.com/artists/miley-cyrus/photos/naughty-vs-nice-moments/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: NOT FOUND for url: https://www.capitalfm.com/artists/miley-cyrus/photos/naughty-vs-nice-moments/ on URL http://www.capitalfm.com/artists/miley-cyrus/photos/naughty-vs-nice-moments/
+2024-12-18 14:00:02,637 38896 news_content_collection ERROR Exception in getting data from url www.capitalfm.com/artists/miley-cyrus/photos/naughty-vs-nice-moments/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: NOT FOUND for url: https://www.capitalfm.com/artists/miley-cyrus/photos/naughty-vs-nice-moments/ on URL https://www.capitalfm.com/artists/miley-cyrus/photos/naughty-vs-nice-moments/
+2024-12-18 14:00:14,164 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 14:00:24,843 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/10/12/lamar-odom-blac-chyna-dating-khloe-rob-kardashian-exes/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/10/12/lamar-odom-blac-chyna-dating-khloe-rob-kardashian-exes/ on URL http://hollywoodlife.com/2017/10/12/lamar-odom-blac-chyna-dating-khloe-rob-kardashian-exes/
+2024-12-18 14:00:27,249 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/10/12/lamar-odom-blac-chyna-dating-khloe-rob-kardashian-exes/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/10/12/lamar-odom-blac-chyna-dating-khloe-rob-kardashian-exes/ on URL https://hollywoodlife.com/2017/10/12/lamar-odom-blac-chyna-dating-khloe-rob-kardashian-exes/
+2024-12-18 14:01:14,563 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 14:01:48,309 38896 news_content_collection ERROR Exception in getting data from url www.iheart.com/content/2017-03-16-selena-gomez-vogue-cover-story-see-interview-highlights/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.iheart.com', port=443): Read timed out. (read timeout=7) on URL http://www.iheart.com/content/2017-03-16-selena-gomez-vogue-cover-story-see-interview-highlights/
+2024-12-18 14:02:13,925 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/03/14/are-ben-affleck-jennifer-garner-getting-back-together-split-breakup/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/03/14/are-ben-affleck-jennifer-garner-getting-back-together-split-breakup/ on URL http://hollywoodlife.com/2018/03/14/are-ben-affleck-jennifer-garner-getting-back-together-split-breakup/
+2024-12-18 14:02:16,398 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2018/03/14/are-ben-affleck-jennifer-garner-getting-back-together-split-breakup/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2018/03/14/are-ben-affleck-jennifer-garner-getting-back-together-split-breakup/ on URL https://hollywoodlife.com/2018/03/14/are-ben-affleck-jennifer-garner-getting-back-together-split-breakup/
+2024-12-18 14:02:33,020 38896 news_content_collection ERROR Exception in getting data from url web-site-design.info/debok/keywords/aaron-rodgers-girlfriend-2017/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPConnectionPool(host='web-site-design.info', port=80): Max retries exceeded with url: /debok/keywords/aaron-rodgers-girlfriend-2017/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x79ca1f74cfe0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL http://web-site-design.info/debok/keywords/aaron-rodgers-girlfriend-2017/
+2024-12-18 14:02:35,306 38896 news_content_collection ERROR Exception in getting data from url web-site-design.info/debok/keywords/aaron-rodgers-girlfriend-2017/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='web-site-design.info', port=443): Max retries exceeded with url: /debok/keywords/aaron-rodgers-girlfriend-2017/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x79ca1f74cfe0>: Failed to establish a new connection: [Errno -2] Name or service not known')) on URL https://web-site-design.info/debok/keywords/aaron-rodgers-girlfriend-2017/
+2024-12-18 14:02:42,110 38896 outputformatters INFO newspaper ignoring lxml node error: Input object is not an XML element: HtmlProcessingInstruction
+2024-12-18 14:02:55,189 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/05/12/harry-styles-new-music-album-solo/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/05/12/harry-styles-new-music-album-solo/ on URL http://hollywoodlife.com/2017/05/12/harry-styles-new-music-album-solo/
+2024-12-18 14:02:57,580 38896 news_content_collection ERROR Exception in getting data from url hollywoodlife.com/2017/05/12/harry-styles-new-music-album-solo/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 404 Client Error: Not Found for url: https://hollywoodlife.com/2017/05/12/harry-styles-new-music-album-solo/ on URL https://hollywoodlife.com/2017/05/12/harry-styles-new-music-album-solo/
+2024-12-18 14:03:03,159 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
+2024-12-18 14:03:06,253 38896 news_content_collection ERROR Exception in getting data from url www.forbes.com/sites/brandonkatz/2017/01/06/megyn-kelly-replacing-savannah-guthrie-on-today-show/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: http://www.forbes.com/sites/brandonkatz/2017/01/06/megyn-kelly-replacing-savannah-guthrie-on-today-show/ on URL http://www.forbes.com/sites/brandonkatz/2017/01/06/megyn-kelly-replacing-savannah-guthrie-on-today-show/
+2024-12-18 14:03:08,916 38896 news_content_collection ERROR Exception in getting data from url www.forbes.com/sites/brandonkatz/2017/01/06/megyn-kelly-replacing-savannah-guthrie-on-today-show/
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Max restarts limit reached for url: https://www.forbes.com/sites/brandonkatz/2017/01/06/megyn-kelly-replacing-savannah-guthrie-on-today-show/ on URL https://www.forbes.com/sites/brandonkatz/2017/01/06/megyn-kelly-replacing-savannah-guthrie-on-today-show/
+2024-12-18 14:03:23,252 38896 news_content_collection ERROR Exception in getting data from url torontosun.com/entertainment/celebrity/roseanne-barr-begs-jerry-seinfeld-for-career-comeback-help/wcm/e1da9af2-e7b9-451d-87e5-0c3c42d99481
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 25, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://torontosun.com:443/entertainment/celebrity/roseanne-barr-begs-jerry-seinfeld-for-career-comeback-help/wcm/e1da9af2-e7b9-451d-87e5-0c3c42d99481 on URL http://torontosun.com/entertainment/celebrity/roseanne-barr-begs-jerry-seinfeld-for-career-comeback-help/wcm/e1da9af2-e7b9-451d-87e5-0c3c42d99481
+2024-12-18 14:03:26,119 38896 news_content_collection ERROR Exception in getting data from url torontosun.com/entertainment/celebrity/roseanne-barr-begs-jerry-seinfeld-for-career-comeback-help/wcm/e1da9af2-e7b9-451d-87e5-0c3c42d99481
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 36, in crawl_link_article
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/computer-scientist/myenv/lib/python3.12/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+newspaper.article.ArticleException: Article `download()` failed with 403 Client Error: Forbidden for url: https://torontosun.com/entertainment/celebrity/roseanne-barr-begs-jerry-seinfeld-for-career-comeback-help/wcm/e1da9af2-e7b9-451d-87e5-0c3c42d99481 on URL https://torontosun.com/entertainment/celebrity/roseanne-barr-begs-jerry-seinfeld-for-career-comeback-help/wcm/e1da9af2-e7b9-451d-87e5-0c3c42d99481
+2024-12-18 14:03:37,976 38896 news_content_collection ERROR Exception in fetching article form URL : 
+Traceback (most recent call last):
+  File "/home/computer-scientist/Desktop/Brainwave-Matrix Solutions /Fake-News-Detector/code/news_content_collection.py", line 19, in crawl_link_article
+IndexError: string index out of range
