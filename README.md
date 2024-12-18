@@ -43,7 +43,7 @@ Usage
 
     Clone this repository to your local machine:
 
-git clone https://github.com/eKidenge/Fake-News-Detector.git
+git clone https://github.com/eKidenge/Brainwave_Matrix_Intern/Fake-News-Detector.git
 
 ###  Configuration:
 
