@@ -31,7 +31,7 @@ Each of the above CSV files is comma separated file and have the following colum
 Installation
 Requirements:
 
-Data download scripts are writtern in python and requires python 3.6 + to run.
+Data download scripts are writtern in python and requires python 3.9 + to run.
 
 Script make use of keys from tweet_keys_file.json file located in code/resources folder. So the API keys needs to be updated in tweet_keys_file.json file. Provide the keys as array of JSON object with attributes app_key,app_secret,oauth_token,oauth_token_secret as mentioned in sample file.
 
